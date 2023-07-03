@@ -2,9 +2,8 @@ import javax.swing.*;
 import javax.swing.border.Border;
 import java.awt.*;
 
-public class Main {
-    public static void main(String[] args) {
-        //Frame frame = new Frame();
+public class Frame extends JFrame {
+    Frame() {
 
         ImageIcon image = new ImageIcon("Puste.png");
 
@@ -28,15 +27,8 @@ public class Main {
         label.setHorizontalAlignment(JLabel.CENTER); // ustawia icone+tekst na srodku
         //label.setBounds(100,0,500,750);
 
-        JFrame frame = new JFrame();
-        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        //frame.setSize(800,900);
-        //frame.setLayout(null);
 
-        frame.setVisible(true);
-        frame.add(label); //dodaje do tablicy
-        frame.pack(); // ustawia automatycznie wszystko
-
+        this.add(label);
 
 
     }
